@@ -5,7 +5,15 @@ module.exports = {
     // container: {
     //   center: true
     // },
-    extend: {},
+    // colors: {
+    //   discordbg: '#36393E'
+    // },
+    extend: {
+      colors:
+      {
+        'discordbg': '#36393E'
+      }
+    },
   },
   variants: {
     extend: {},

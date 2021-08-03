@@ -1,31 +1,23 @@
 import React from 'react'
 import "@ui5/webcomponents/dist/DurationPicker.js"
 
-function NewShowForm() {
+function NewMovieForm() {
 
     return (
         <div>
             <div class="flex justify-center">
-                <div class="bg-yellow-200 w-4/5 h-64 border-2 mt-8 rounded-2xl focus-within:bg-yellow-400 transition-all">
+                <div class="bg-red-300 w-4/5 h-64 border-2 mt-8 rounded-2xl focus-within:bg-red-800 transition-all focus-within:text-white">
                     <div class="m-8">
 
                         <form>
-                            <label for="showname">Show Title:</label> <br />
-                            <input type="text" class="rounded text-black w-full" id="showname"></input>
+                            <label for="moviename">Movie Title:</label> <br />
+                            <input type="text" class="rounded text-red-800 w-full focus:outline-none focus:ring focus:border-gray-100 " id="moviename"></input>
                             <div class="flex justify-start space-x-5 mt-8">
                                 <div class="flex justify-start space-x-2">
-                                    <label for="showseason">Current Season:</label> <br />
-                                    <input type="number" class="rounded text-black w-20" id="showseason" min="1"></input>
-                                </div>
-                                <div class="flex justify-start space-x-2">
-                                    <label for="showepisode">Current Episode:</label> <br />
-                                    <input type="number" class="rounded text-black w-20" id="showepisode" min="1"></input>
-                                </div>
-                                <div class="flex justify-start space-x-2">
-                                    <label for="showtimestamp">Current Timestamp:</label> <br />
+                                    <label for="movietimestamp">Current Timestamp:</label> <br />
                                 </div>
                                 <div>
-                                    <ui5-duration-picker class="w-64 rounded text-black w-20" value="00:00:00"></ui5-duration-picker>
+                                    <ui5-duration-picker class="w-64 rounded text-red-800 w-20" value="00:00:00"></ui5-duration-picker>
                                 </div>
 
                             </div>
@@ -47,4 +39,4 @@ function NewShowForm() {
     )
 }
 
-export default NewShowForm
+export default NewMovieForm
