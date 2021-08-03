@@ -1,17 +1,7 @@
 import React from 'react'
+import "@ui5/webcomponents/dist/DurationPicker.js"
 
 function NewShowForm() {
-    let durationIn = document.getElementById("timestamp");
-    let resultP = document.getElementById("output");
-
-    durationIn.addEventListener("change", function (e) {
-        resultP.textContent = "";
-        durationIn.checkValidity();
-    });
-
-    durationIn.addEventListener("invalid", function (e) {
-        resultP.textContent = "Invalid input";
-    });
 
     return (
         <div>
@@ -33,8 +23,9 @@ function NewShowForm() {
                                 </div>
                                 <div class="flex justify-start space-x-2">
                                     <label for="timestamp">Current Timestamp:</label> <br />
-                                    <input type="text" required pattern="[0-9]{2}:[0-9]{2}:[0-9]{2}" value="00:00:00" class="rounded text-pink-500 w-32" id="timestamp" ></input>
-                                    <p id="output"></p>
+                                </div>
+                                <div>
+                                    <ui5-duration-picker class="w-64 rounded text-pink-500 w-20" value="00:00:00"></ui5-duration-picker>
                                 </div>
 
                             </div>
