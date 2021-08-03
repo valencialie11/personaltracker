@@ -1,25 +1,13 @@
-import logo from './logo.svg';
 import './App.css';
-import Title from './component/Title'
+import MainPage from './pages/MainPage';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <p>
-          Hello
-        </p>
-        {/* <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a> */}
-      </header>
-      {/* <br/> this means like <b></b>*/}
-      <Title/>
+      <MainPage />
+      <div class="bg-blue-500 w-32 h-32 m-16 border-2">
+
+      </div>
     </div>
   );
 }
