@@ -1,10 +1,10 @@
 import React from 'react'
+import NewShowForm from '../component/forms/NewShowForm'
 
 function MainPage() {
     return (
         <div>
-            <div class="bg-blue-500 w-32 h-32 m-16 border-2">
-            </div>
+            <NewShowForm />
         </div>
     )
 }
